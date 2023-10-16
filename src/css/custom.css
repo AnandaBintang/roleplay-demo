@@ -8,6 +8,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  z-index: 99;
 }
 .nav-wrapper {
   display: flex;
@@ -75,6 +76,21 @@
   z-index: -1;
 } */
 
+#vision-mission {
+  min-height: 80vh;
+  background-image: url("../img/vision-mission-background.png");
+  background-size: cover;
+  background-position: center;
+}
+#vision-mission .vision-mission-title h1 {
+  text-shadow: 3px 3px 0px #373662;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #373662;
+}
+#vision-mission .vision-mission-content {
+  background-color: #373662;
+}
+
 /* Tablet */
 @media only screen and (min-width: 768px) {
   .nav-wrapper {
@@ -93,6 +109,10 @@
 
   #about {
     height: 60vh;
+  }
+
+  #vision-mission {
+    min-height: 60vh;
   }
 }
 
@@ -115,6 +135,10 @@
 
   #about {
     height: 100vh;
+  }
+
+  #vision-mission {
+    min-height: 100vh;
   }
 }
 
