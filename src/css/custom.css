@@ -116,7 +116,7 @@
   height: 18rem;
   background-color: #757575;
   background-position: center;
-  background-blend-mode: multiply;
+  background-blend-mode: lighten;
   background-size: cover;
   border: 2px solid #fff;
   transform: skew(-10deg);
@@ -137,15 +137,15 @@
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 .service::after {
-  content: "2D Animation";
-  font-size: 1.5rem;
+  font-size: 1.75rem;
+  line-height: 1.5rem;
   position: absolute;
   color: white;
   font-weight: 800;
-  top: 80%;
-  left: 40%;
+  top: 87%;
+  left: 45%;
   transform: translateX(-50%) skew(10deg);
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.552);
 }
 
 /* Tablet */
@@ -181,6 +181,9 @@
   .service {
     height: 20rem;
   }
+  .service::after {
+    font-size: 2rem;
+  }
 }
 
 /* Desktop Medium */
@@ -214,6 +217,12 @@
   .service {
     height: 31rem;
   }
+  .service::after {
+    font-size: 2.25rem;
+    line-height: 2rem;
+    top: 90%;
+    left: 47%;
+  }
 }
 
 /* Desktop Large */
@@ -228,5 +237,11 @@
 
   .service {
     height: 41rem;
+  }
+  .service::after {
+    font-size: 3.5rem;
+    line-height: 3rem;
+    top: 90%;
+    left: 45%;
   }
 }
