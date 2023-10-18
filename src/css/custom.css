@@ -103,6 +103,51 @@
   background-color: #373662;
 }
 
+#service {
+  min-height: 80vh;
+  background-image: url("../img/service-background.png");
+  background-size: cover;
+  background-position: center;
+}
+#service h1 {
+  -webkit-text-stroke: 1px #fff;
+}
+.service {
+  height: 18rem;
+  background-color: #757575;
+  background-position: center;
+  background-blend-mode: multiply;
+  background-size: cover;
+  border: 2px solid #fff;
+  transform: skew(-10deg);
+  border-radius: 15px;
+}
+.service::before {
+  content: "\25B6";
+  font-size: 4rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
+  padding: 10px;
+  border-radius: 0;
+  cursor: pointer;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.service::after {
+  content: "2D Animation";
+  font-size: 1.5rem;
+  position: absolute;
+  color: white;
+  font-weight: 800;
+  top: 80%;
+  left: 40%;
+  transform: translateX(-50%) skew(10deg);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
 /* Tablet */
 @media only screen and (min-width: 768px) {
   .nav-wrapper {
@@ -128,6 +173,13 @@
 
   #vision-mission {
     min-height: 60vh;
+  }
+
+  #service {
+    min-height: 60vh;
+  }
+  .service {
+    height: 20rem;
   }
 }
 
@@ -155,6 +207,13 @@
   #vision-mission {
     min-height: 100vh;
   }
+
+  #service {
+    min-height: 100vh;
+  }
+  .service {
+    height: 31rem;
+  }
 }
 
 /* Desktop Large */
@@ -165,5 +224,9 @@
 
   #about .about-content::after {
     height: 100%;
+  }
+
+  .service {
+    height: 41rem;
   }
 }
