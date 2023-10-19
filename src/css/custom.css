@@ -148,6 +148,16 @@
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.552);
 }
 
+#client {
+  min-height: 80vh;
+  background-image: url("../img/client-background.png");
+  background-size: cover;
+  background-position: center;
+}
+#client .client {
+  background-color: #fff;
+}
+
 /* Tablet */
 @media only screen and (min-width: 768px) {
   .nav-wrapper {
