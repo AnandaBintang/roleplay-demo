@@ -158,6 +158,13 @@
   background-color: #fff;
 }
 
+#gallery {
+  min-height: 80vh;
+  background-image: url("../img/gallery-background.png");
+  background-size: cover;
+  background-position: center;
+}
+
 /* Tablet */
 @media only screen and (min-width: 768px) {
   .nav-wrapper {
