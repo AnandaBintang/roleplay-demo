@@ -165,6 +165,13 @@
   background-position: center;
 }
 
+#contact {
+  min-height: 80vh;
+  background-image: url("../img/contact-background.png");
+  background-size: cover;
+  background-position: center;
+}
+
 /* Tablet */
 @media only screen and (min-width: 768px) {
   .nav-wrapper {
